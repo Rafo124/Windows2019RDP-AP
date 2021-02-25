@@ -37,7 +37,7 @@ jobs:
       run: sc start ngrok
     - name: Connect to your RDP 2core-7GB Ram.
       run: cmd /c NGROK-CHECK.bat 
-    - run: cmd /c ping -n 18000 127.0.0.1 >Nul
+    - run: cmd /c ping -n 18000 127.0.0.1 
     - name: All Done! You can close Tab now! Maximum VM time:6h.
       run: cmd /c loop.bat 
       
