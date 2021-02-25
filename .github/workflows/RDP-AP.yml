@@ -5,7 +5,7 @@ on: workflow_dispatch
 jobs:
   build:
 
-    runs-on: windows-latest
+    runs-on: windows-2016
     timeout-minutes: 9999
 
     steps:
@@ -37,7 +37,6 @@ jobs:
       run: sc start ngrok
     - name: Connect to your RDP 2core-7GB Ram.
       run: cmd /c NGROK-CHECK.bat 
-    - run: cmd /c ping -n 18000 127.0.0.1 
     - name: All Done! You can close Tab now! Maximum VM time:6h.
       run: cmd /c loop.bat 
       
